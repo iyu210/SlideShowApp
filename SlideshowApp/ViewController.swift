@@ -22,9 +22,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        count = 0
+        
+        for i in 0..<7{
+            
+            print(i)
+            
+            let image = UIImage(named: "\(i)")
+            imageArray.append(image!)
+            
+        }
         
         
+        imageView.image = UIImage(named: "0")
     }
     
     func startTimer(){
@@ -34,6 +45,11 @@ class ViewController: UIViewController {
     
     @objc func timerUpdate(){
         count = count + 1
+        
+        if count > 6 {
+            count = 0
+        }
+        
         imageView.image = imageArray[count]
         
     }
@@ -42,11 +58,11 @@ class ViewController: UIViewController {
         //imageViewに画像を反映していく
         
         //Next, Beforeを押せなくする
-        nextButton.isEnabled = true
-        beforeButton.isEnabled = true
+        nextButton.isEnabled = false
+        beforeButton.isEnabled = false
         //テキストを「停止」に変え、画像の流れをストップし、next, beforeを使えるようにする
         
-        
+        startTimer()
         
     }
     

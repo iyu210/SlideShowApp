@@ -8,14 +8,25 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var image: UIImage!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = image
 
-        // Do any additional setup after loading the view.
+            }
+    
+    @IBAction func unWind(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-
+    
+    
     /*
     // MARK: - Navigation
 

@@ -20,29 +20,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-g3-ATM">
-                                <rect key="frame" x="10" y="145" width="393" height="254"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-g3-ATM">
+                                <rect key="frame" x="10" y="54" width="394" height="423"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vqz-g3-ATM" secondAttribute="height" multiplier="394:423" id="xWU-mi-71Y"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ysT-81-dv6" appends="YES" id="qBE-UN-a7q"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr3-Ma-XSK">
-                                <rect key="frame" x="10" y="428" width="100" height="79"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-wE-cAw">
+                                <rect key="frame" x="167" y="517" width="80" height="43.5"/>
                                 <color key="backgroundColor" name="AccentColor"/>
-                                <state key="normal" title="進む">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rF5-Ol-QDh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-wE-cAw">
-                                <rect key="frame" x="155" y="428" width="101" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="OdO-kr-LFv"/>
+                                    <constraint firstAttribute="width" secondItem="njQ-wE-cAw" secondAttribute="height" multiplier="24:13" id="YUU-es-qGz"/>
+                                </constraints>
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -50,10 +44,13 @@
                                     <action selector="onPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOZ-Ab-6AJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-U5-mud">
-                                <rect key="frame" x="304" y="428" width="99" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-U5-mud">
+                                <rect key="frame" x="324" y="517" width="80" height="44.5"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pbC-U5-mud" secondAttribute="height" multiplier="119:66" id="Lud-lm-feX"/>
+                                    <constraint firstAttribute="width" constant="120" id="nI8-aQ-yC5"/>
+                                </constraints>
                                 <state key="normal" title="再生">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -61,8 +58,35 @@
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmN-kN-4kf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr3-Ma-XSK">
+                                <rect key="frame" x="10" y="517" width="80" height="44"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tr3-Ma-XSK" secondAttribute="height" multiplier="20:11" id="cXG-V8-pqC"/>
+                                    <constraint firstAttribute="width" constant="80" id="wga-Il-srq"/>
+                                </constraints>
+                                <state key="normal" title="進む">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rF5-Ol-QDh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vqz-g3-ATM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="4cb-4o-JS4"/>
+                            <constraint firstAttribute="trailing" secondItem="vqz-g3-ATM" secondAttribute="trailing" constant="10" id="7Pe-QH-ge8"/>
+                            <constraint firstItem="Tr3-Ma-XSK" firstAttribute="leading" secondItem="vqz-g3-ATM" secondAttribute="leading" id="826-qI-awC"/>
+                            <constraint firstItem="Tr3-Ma-XSK" firstAttribute="top" secondItem="vqz-g3-ATM" secondAttribute="bottom" constant="40" id="8ZQ-yN-xpc"/>
+                            <constraint firstItem="njQ-wE-cAw" firstAttribute="width" secondItem="Tr3-Ma-XSK" secondAttribute="width" id="F8w-AF-rbO"/>
+                            <constraint firstItem="pbC-U5-mud" firstAttribute="width" secondItem="Tr3-Ma-XSK" secondAttribute="width" id="G37-Vc-0ay"/>
+                            <constraint firstItem="pbC-U5-mud" firstAttribute="top" secondItem="vqz-g3-ATM" secondAttribute="bottom" constant="40" id="IPe-Md-irp"/>
+                            <constraint firstItem="njQ-wE-cAw" firstAttribute="top" secondItem="vqz-g3-ATM" secondAttribute="bottom" constant="40" id="LA2-tP-fpw"/>
+                            <constraint firstItem="njQ-wE-cAw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Msy-XC-bGr"/>
+                            <constraint firstItem="pbC-U5-mud" firstAttribute="trailing" secondItem="vqz-g3-ATM" secondAttribute="trailing" id="P4f-O2-fDE"/>
+                            <constraint firstItem="vqz-g3-ATM" firstAttribute="top" secondItem="1vA-TI-dRi" secondAttribute="bottom" constant="10" id="Ri5-D2-HI5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="NextButton" destination="Tr3-Ma-XSK" id="AYT-gF-uSp"/>
@@ -93,15 +117,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-Hd-gVq">
-                                <rect key="frame" x="0.0" y="0.0" width="535" height="579"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="377"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="377" id="0Gy-mb-drw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAC-LK-sqc">
-                                <rect key="frame" x="179" y="477" width="92" height="231"/>
+                                <rect key="frame" x="179.5" y="434" width="55" height="45"/>
+                                <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="戻る"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="unWind:" destination="4tv-DT-QZB" eventType="touchUpInside" id="EHA-3f-d4h"/>
                                 </connections>
@@ -111,8 +138,8 @@
                         <constraints>
                             <constraint firstItem="FHc-Hd-gVq" firstAttribute="top" secondItem="i3o-hg-nTT" secondAttribute="bottom" id="7kf-vJ-tFV"/>
                             <constraint firstItem="AAC-LK-sqc" firstAttribute="centerX" secondItem="VEG-cj-UHe" secondAttribute="centerX" id="B1f-DU-sHx"/>
+                            <constraint firstItem="AAC-LK-sqc" firstAttribute="top" secondItem="FHc-Hd-gVq" secondAttribute="bottom" constant="57" id="Imp-72-ARe"/>
                             <constraint firstItem="FHc-Hd-gVq" firstAttribute="leading" secondItem="VEG-cj-UHe" secondAttribute="leading" id="NDt-gC-zIQ"/>
-                            <constraint firstItem="AAC-LK-sqc" firstAttribute="top" secondItem="FHc-Hd-gVq" secondAttribute="bottom" constant="100" id="QBD-Yl-1ie"/>
                             <constraint firstItem="FHc-Hd-gVq" firstAttribute="centerX" secondItem="AAC-LK-sqc" secondAttribute="centerX" id="wJM-9B-ZN1"/>
                         </constraints>
                     </view>

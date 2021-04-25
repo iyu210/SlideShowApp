@@ -55,7 +55,9 @@ class ViewController: UIViewController {
         imageView.image = imageArray[count]
         
     }
+    
 
+    
     @IBAction func start(_ sender: Any) {
         
         //timerが動いてるなら.
@@ -105,6 +107,23 @@ class ViewController: UIViewController {
         
         imageView.image = imageArray[count]
     }
+    
+    @IBAction func tapImage(_ sender: Any) {
+        if timer.isValid == true {
+            //タイマー停止
+            timer.invalidate()
+            //ボタンのタイトル変更
+            startStopButton.setTitle("再生", for: .normal)
+            //nextButton,beforeButtonを使えるようにする
+            nextButton.isEnabled = true
+            beforeButton.isEnabled = true
+            //画面遷移
+            self.performSegue(withIdentifier: "toNext", sender: nil)
+            
+        }
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondViewController:SecondViewController = segue.destination as! SecondViewController

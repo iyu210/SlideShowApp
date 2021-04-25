@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -17,25 +17,25 @@
                         <viewControllerLayoutGuide type="bottom" id="G0G-eW-ewC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-g3-ATM">
-                                <rect key="frame" x="10" y="54" width="394" height="423"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-g3-ATM">
+                                <rect key="frame" x="10" y="10" width="300" height="423"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="vqz-g3-ATM" secondAttribute="height" multiplier="394:423" id="xWU-mi-71Y"/>
+                                    <constraint firstAttribute="height" constant="423" id="R3B-aS-j5M"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ysT-81-dv6" appends="YES" id="qBE-UN-a7q"/>
+                                    <outletCollection property="gestureRecognizers" destination="SlL-k4-QSV" appends="YES" id="Umc-Iv-F5k"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-wE-cAw">
-                                <rect key="frame" x="167" y="517" width="80" height="43.5"/>
+                                <rect key="frame" x="120" y="236" width="80" height="44"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="OdO-kr-LFv"/>
-                                    <constraint firstAttribute="width" secondItem="njQ-wE-cAw" secondAttribute="height" multiplier="24:13" id="YUU-es-qGz"/>
+                                    <constraint firstAttribute="height" constant="44" id="6LC-ue-Nhx"/>
+                                    <constraint firstAttribute="width" constant="80" id="KQa-ch-bRu"/>
                                 </constraints>
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,11 +45,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-U5-mud">
-                                <rect key="frame" x="324" y="517" width="80" height="44.5"/>
+                                <rect key="frame" x="190" y="236" width="80" height="44"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="pbC-U5-mud" secondAttribute="height" multiplier="119:66" id="Lud-lm-feX"/>
-                                    <constraint firstAttribute="width" constant="120" id="nI8-aQ-yC5"/>
+                                    <constraint firstAttribute="height" constant="44" id="9Xw-Ba-3BR"/>
+                                    <constraint firstAttribute="width" constant="80" id="Eym-K9-MXo"/>
                                 </constraints>
                                 <state key="normal" title="再生">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,11 +59,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr3-Ma-XSK">
-                                <rect key="frame" x="10" y="517" width="80" height="44"/>
+                                <rect key="frame" x="50" y="236" width="80" height="44"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Tr3-Ma-XSK" secondAttribute="height" multiplier="20:11" id="cXG-V8-pqC"/>
-                                    <constraint firstAttribute="width" constant="80" id="wga-Il-srq"/>
+                                    <constraint firstAttribute="width" constant="80" id="C6T-99-GC0"/>
+                                    <constraint firstAttribute="height" constant="44" id="I9r-vj-UDH"/>
                                 </constraints>
                                 <state key="normal" title="進む">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,18 +74,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="vqz-g3-ATM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="4cb-4o-JS4"/>
-                            <constraint firstAttribute="trailing" secondItem="vqz-g3-ATM" secondAttribute="trailing" constant="10" id="7Pe-QH-ge8"/>
-                            <constraint firstItem="Tr3-Ma-XSK" firstAttribute="leading" secondItem="vqz-g3-ATM" secondAttribute="leading" id="826-qI-awC"/>
-                            <constraint firstItem="Tr3-Ma-XSK" firstAttribute="top" secondItem="vqz-g3-ATM" secondAttribute="bottom" constant="40" id="8ZQ-yN-xpc"/>
-                            <constraint firstItem="njQ-wE-cAw" firstAttribute="width" secondItem="Tr3-Ma-XSK" secondAttribute="width" id="F8w-AF-rbO"/>
-                            <constraint firstItem="pbC-U5-mud" firstAttribute="width" secondItem="Tr3-Ma-XSK" secondAttribute="width" id="G37-Vc-0ay"/>
-                            <constraint firstItem="pbC-U5-mud" firstAttribute="top" secondItem="vqz-g3-ATM" secondAttribute="bottom" constant="40" id="IPe-Md-irp"/>
-                            <constraint firstItem="njQ-wE-cAw" firstAttribute="top" secondItem="vqz-g3-ATM" secondAttribute="bottom" constant="40" id="LA2-tP-fpw"/>
-                            <constraint firstItem="njQ-wE-cAw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Msy-XC-bGr"/>
-                            <constraint firstItem="pbC-U5-mud" firstAttribute="trailing" secondItem="vqz-g3-ATM" secondAttribute="trailing" id="P4f-O2-fDE"/>
-                            <constraint firstItem="vqz-g3-ATM" firstAttribute="top" secondItem="1vA-TI-dRi" secondAttribute="bottom" constant="10" id="Ri5-D2-HI5"/>
+                            <constraint firstAttribute="trailing" secondItem="vqz-g3-ATM" secondAttribute="trailing" constant="10" id="23z-K4-D8n"/>
+                            <constraint firstAttribute="trailing" secondItem="pbC-U5-mud" secondAttribute="trailing" constant="50" id="Bbi-2z-1Op"/>
+                            <constraint firstItem="vqz-g3-ATM" firstAttribute="top" secondItem="1vA-TI-dRi" secondAttribute="bottom" constant="10" id="DJz-g1-VHS"/>
+                            <constraint firstItem="Tr3-Ma-XSK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Kur-wO-Et3"/>
+                            <constraint firstItem="vqz-g3-ATM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Oqo-NA-xET"/>
+                            <constraint firstItem="G0G-eW-ewC" firstAttribute="top" secondItem="njQ-wE-cAw" secondAttribute="bottom" constant="200" id="aj4-fq-799"/>
+                            <constraint firstItem="G0G-eW-ewC" firstAttribute="top" secondItem="pbC-U5-mud" secondAttribute="bottom" constant="200" id="nW6-mG-w6E"/>
+                            <constraint firstItem="G0G-eW-ewC" firstAttribute="top" secondItem="Tr3-Ma-XSK" secondAttribute="bottom" constant="200" id="pML-2j-vnL"/>
+                            <constraint firstItem="njQ-wE-cAw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vqj-iH-xsH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -93,12 +92,13 @@
                         <outlet property="beforeButton" destination="njQ-wE-cAw" id="5ey-nT-Ccb"/>
                         <outlet property="imageView" destination="vqz-g3-ATM" id="r9C-aZ-gxh"/>
                         <outlet property="startStopButton" destination="pbC-U5-mud" id="g5s-dL-Rp4"/>
+                        <segue destination="4tv-DT-QZB" kind="show" identifier="toNext" id="lLd-Fl-TfX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="ysT-81-dv6">
+                <tapGestureRecognizer id="SlL-k4-QSV">
                     <connections>
-                        <segue destination="4tv-DT-QZB" kind="show" id="MfA-fo-Tfb"/>
+                        <action selector="tapImage:" destination="BYZ-38-t0r" id="CaE-sG-r7m"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -113,17 +113,17 @@
                         <viewControllerLayoutGuide type="bottom" id="lj6-a7-gLe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VEG-cj-UHe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-Hd-gVq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="377"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="377" id="0Gy-mb-drw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAC-LK-sqc">
-                                <rect key="frame" x="179.5" y="434" width="55" height="45"/>
+                                <rect key="frame" x="132.5" y="434" width="55" height="45"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="戻る">

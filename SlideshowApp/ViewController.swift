@@ -120,6 +120,9 @@ class ViewController: UIViewController {
             //画面遷移
             self.performSegue(withIdentifier: "toNext", sender: nil)
             
+        } else{
+            //画面遷移
+            self.performSegue(withIdentifier: "toNext", sender: nil)
         }
     }
     
